@@ -66,7 +66,7 @@ async function zkSyncTransfer() {
     console.log(">> specified sync wallet is already INITIALIZED")
   }
 
-  const amount = zksync.utils.closestPackableTransactionAmount(ethers.utils.parseEther("0.002"));
+  const amount = zksync.utils.closestPackableTransactionAmount(ethers.utils.parseEther("0.004"));
   const fee = zksync.utils.closestPackableTransactionFee(ethers.utils.parseEther("0.001"));
 
   const transfer = await syncWallet.syncTransfer({

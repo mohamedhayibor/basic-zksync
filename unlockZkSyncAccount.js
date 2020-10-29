@@ -3,8 +3,10 @@ const zksync = require("zksync");
 
 require("dotenv").config();
 
+
 async function unlockZkSyncAccount() {
-  console.log("==== unlockZkSyncAccount() ====");
+  console.log("==== Does not work for now | ZkSync need to update documentation ====");
+  // console.log("==== unlockZkSyncAccount() ====");
 
   // To interact with Sync network users need to know the endpoint to the operator node
   const syncProvider = await zksync.getDefaultProvider("rinkeby");
